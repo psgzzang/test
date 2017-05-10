@@ -1,0 +1,718 @@
+20170412 09:49:45      SnaplogicWrap.GuestLookupRequest Request Received
+20170412 09:49:45      Deserialized Object, Sending to GuestLookup
+20170412 09:49:45      GuestLookupRequest Request Received:
+20170412 09:49:45      subcardNumber:         qj1nIjciJhdTyWwoBhvY+tgL6PzrJ6BLg5BvgwchZqg=
+                       guestId:               
+                       country:               USA
+                       certStatus:            Issued
+                       domain:                Subway
+                       sellerProfileId:       12921
+                       clerkId:               1
+                       acquired:              SWIPE_DKPT
+                       SaleTerminal:          
+                         satelliteId:         0
+                         terminalId:          1
+                         transactionId:       3a7c8462-4b29-4bbd-aae6-ca41fa70e641
+                         posTransactionId:    0
+                         posType:             POS
+                         posVersion:          
+                         businessDate:        1/1/0001 12:00:00 AM
+                         transactionDate:     1/1/0001 12:00:00 AM
+                       
+20170412 09:49:45      GuestLookupRequest Raw Request:
+20170412 09:49:45      {
+                         "subcardNumber": "qj1nIjciJhdTyWwoBhvY+tgL6PzrJ6BLg5BvgwchZqg=",
+                         "country": "USA",
+                         "certStatus": "Issued",
+                         "domain": "Subway",
+                         "sellerProfileId": "12921",
+                         "clerkId": "1",
+                         "acquired": "SWIPE_DKPT",
+                         "SaleTerminal": {
+                           "storeId": "12921",
+                           "satelliteId": "0",
+                           "terminalId": "1",
+                           "transactionId": "3a7c8462-4b29-4bbd-aae6-ca41fa70e641",
+                           "posTransactionId": "0",
+                           "posType": "POS"
+                         },
+                         "KSN": "//8SExQABwBOWw=="
+                       }
+                       
+20170412 09:49:45      Sending GuestLookupRequest Response:
+20170412 09:49:45      requestId:                0
+                       dateTime:                 4/12/2017 9:49:45 AM
+                       status:                   SUCCESS
+                       GuestList:                
+                         guestId:                ABC1234
+                         memberFirstName:        XOFYTSNEI
+                         memberLastName:         AGY
+                                                 
+                       BalanceInquiry:           
+                         status:                 Okay
+                         Receipt:                
+                           accountId:            6277201287461286
+                           status:               Active
+                           registered:           true
+                           ValueStoreBalance:    
+                             currency:           USD
+                             status:             Active
+                             amount:             1000
+                                                 
+                       Offers:                   
+                         Status:                 
+                           statusCode:           SUCCESS
+                           statusDescription:    Done
+                           errorCode:            
+                           errorDescription:     
+                         OffersList:             
+                           offerId:              930000069
+                           expirationDate:       4/18/2017 9:49:45 AM
+                           offerStatus:          ACTIVE
+                           offerType:            VALUE_BASED_OFFER
+                           offerCampaignUri:     bigstore:offermanager:offercampaign#6a951e10-d6a6-46c1-a215-a41d01fd67c8
+                           startDate:            4/19/2016 12:00:00 AM
+                           propositionGuid:      subwaySD:6da7a880-837e-4cc8-94c2-f753713be86e
+                           offerDescription:     $2.50 Breakfast Combo - sub
+                                                 
+                           offerId:              930000076
+                           expirationDate:       4/14/2017 9:49:45 AM
+                           offerStatus:          ACTIVE
+                           offerType:            VALUE_BASED_OFFER
+                           offerCampaignUri:     bigstore:offermanager:offercampaign#0fc3f3d7-1491-42c4-ba0a-57d96973ae25
+                           startDate:            5/11/2016 12:00:00 AM
+                           propositionGuid:      subwaySD:6da7a880-837e-4cc8-94c2-f753713be86f
+                           offerDescription:     $1 Off Any Breakfast Sandwich
+                                                 
+                       Loyalty:                  
+                         status:                 Active
+                         statusInfo:             Active
+                         ResponseDetails:        
+                           responseCode:         core0
+                           responseMessage:      Success
+                           responseSuccess:      False
+                         Summaries:              
+                           bucketId:             30
+                           rewardType:           Tokens
+                           available:            2000
+                                                 
+                       Certificate:              
+                         certificateCount:       19
+                         CertificatesList:       
+                           serialNumber:         88888888888888
+                           amount:               2.0
+                           expirationDate:       5/7/2017 9:49:45 AM
+                                                 
+                           serialNumber:         9121606916816166
+                           amount:               2.0
+                           expirationDate:       5/8/2017 9:49:45 AM
+                                                 
+                           serialNumber:         8002133515362638
+                           amount:               2.0
+                           expirationDate:       5/7/2017 9:49:45 AM
+                                                 
+                           serialNumber:         9037595978384946
+                           amount:               2.0
+                           expirationDate:       5/2/2017 9:49:45 AM
+                                                 
+                           serialNumber:         468239240725862
+                           amount:               2.0
+                           expirationDate:       4/16/2017 9:49:45 AM
+                                                 
+                           serialNumber:         6674152251808586
+                           amount:               2.0
+                           expirationDate:       4/27/2017 9:49:45 AM
+                                                 
+                           serialNumber:         1534668488137872
+                           amount:               2.0
+                           expirationDate:       5/8/2017 9:49:45 AM
+                                                 
+                           serialNumber:         3451558669666118
+                           amount:               2.0
+                           expirationDate:       4/21/2017 9:49:45 AM
+                                                 
+                           serialNumber:         5997223080533484
+                           amount:               2.0
+                           expirationDate:       4/27/2017 9:49:45 AM
+                                                 
+                           serialNumber:         115471400701485
+                           amount:               2.0
+                           expirationDate:       5/12/2017 9:49:45 AM
+                                                 
+                           serialNumber:         8426899612375744
+                           amount:               2.0
+                           expirationDate:       4/28/2017 9:49:45 AM
+                                                 
+                           serialNumber:         6437306597525036
+                           amount:               2.0
+                           expirationDate:       4/17/2017 9:49:45 AM
+                                                 
+                           serialNumber:         9402008381412720
+                           amount:               2.0
+                           expirationDate:       4/23/2017 9:49:45 AM
+                                                 
+                           serialNumber:         3399249453362386
+                           amount:               2.0
+                           expirationDate:       4/13/2017 9:49:45 AM
+                                                 
+                           serialNumber:         2251062736472144
+                           amount:               2.0
+                           expirationDate:       4/17/2017 9:49:45 AM
+                                                 
+                           serialNumber:         5275489621112789
+                           amount:               2.0
+                           expirationDate:       5/6/2017 9:49:45 AM
+                                                 
+                           serialNumber:         4317753797787389
+                           amount:               2.0
+                           expirationDate:       5/6/2017 9:49:45 AM
+                                                 
+                           serialNumber:         5667099163520831
+                           amount:               2.0
+                           expirationDate:       4/27/2017 9:49:45 AM
+                                                 
+                           serialNumber:         842254987389825
+                           amount:               2.0
+                           expirationDate:       4/13/2017 9:49:45 AM
+                                                 
+                       
+20170412 09:49:46      GuestLookupRequest Raw Response:
+20170412 09:49:46      {
+                         "requestId": "0",
+                         "dateTime": "2017-04-12T09:49:45.5250314-07:00",
+                         "status": "SUCCESS",
+                         "GuestList": [
+                           {
+                             "guestId": "ABC1234",
+                             "memberFirstName": "XOFYTSNEI",
+                             "memberLastName": "AGY"
+                           }
+                         ],
+                         "BalanceInquiry": {
+                           "status": "Okay",
+                           "Receipt": {
+                             "accountId": "6277201287461286",
+                             "status": "Active",
+                             "registered": "true",
+                             "ValueStoreBalances": [
+                               {
+                                 "currency": "USD",
+                                 "status": "Active",
+                                 "amount": "1000"
+                               }
+                             ]
+                           }
+                         },
+                         "Offers": {
+                           "Status": {
+                             "statusCode": "SUCCESS",
+                             "statusDescription": "Done"
+                           },
+                           "OffersList": [
+                             {
+                               "offerId": "930000069",
+                               "offerTitle": "$2.50 Breakfast Combo - sub",
+                               "expirationDate": "2017-04-18T09:49:45.5269945-07:00",
+                               "offerStatus": "ACTIVE",
+                               "offerType": "VALUE_BASED_OFFER",
+                               "offerCampaignUri": "bigstore:offermanager:offercampaign#6a951e10-d6a6-46c1-a215-a41d01fd67c8",
+                               "startDate": "2016-04-19T00:00:00",
+                               "propositionGuid": "subwaySD:6da7a880-837e-4cc8-94c2-f753713be86e",
+                               "offerDescription": "$2.50 Breakfast Combo - sub",
+                               "offerDetailedDescription": "$2.50 Breakfast Combo - sub",
+                               "LegalDisclaimerList": [
+                                 {
+                                   "legalDisclaimer": "No conpensation for any damages caused for use of this offer"
+                                 }
+                               ],
+                               "ImagesList": [
+                                 {
+                                   "offerImageContentType": "Mobile",
+                                   "offerImageURL": "www.subway.com/image2.png"
+                                 }
+                               ],
+                               "CTAList": [
+                                 {
+                                   "offerClickToActionTitle": "Click to receive 100 tokens",
+                                   "offerClickToActionUrl": "www.digital-subway.com/cta/click100"
+                                 }
+                               ]
+                             },
+                             {
+                               "offerId": "930000076",
+                               "offerTitle": "$1 Off Any Breakfast Sandwich",
+                               "expirationDate": "2017-04-14T09:49:45.5289568-07:00",
+                               "offerStatus": "ACTIVE",
+                               "offerType": "VALUE_BASED_OFFER",
+                               "offerCampaignUri": "bigstore:offermanager:offercampaign#0fc3f3d7-1491-42c4-ba0a-57d96973ae25",
+                               "startDate": "2016-05-11T00:00:00",
+                               "propositionGuid": "subwaySD:6da7a880-837e-4cc8-94c2-f753713be86f",
+                               "offerDescription": "$1 Off Any Breakfast Sandwich",
+                               "offerDetailedDescription": "$1 Off Any Breakfast Sandwich",
+                               "LegalDisclaimerList": [
+                                 {
+                                   "legalDisclaimer": "No conpensation for any damages caused for use of this offer"
+                                 }
+                               ],
+                               "ImagesList": [
+                                 {
+                                   "offerImageContentType": "Mobile",
+                                   "offerImageURL": "www.subway.com/image2.png"
+                                 }
+                               ],
+                               "CTAList": [
+                                 {
+                                   "offerClickToActionTitle": "Click to receive 100 tokens",
+                                   "offerClickToActionUrl": "www.digital-subway.com/cta/click100"
+                                 }
+                               ]
+                             }
+                           ]
+                         },
+                         "Loyalty": {
+                           "status": "Active",
+                           "statusInfo": "Active",
+                           "ResponseDetails": {
+                             "responseCode": "core0",
+                             "responseMessage": "Success"
+                           },
+                           "Summaries": [
+                             {
+                               "bucketId": 30,
+                               "rewardType": "Tokens",
+                               "available": 2000.0
+                             }
+                           ]
+                         },
+                         "Certificates": {
+                           "certificateCount": 19,
+                           "ResponseDetails": {
+                             "responseCode": "core0",
+                             "responseMessage": "Okay",
+                             "responseSuccess": true
+                           },
+                           "CertificatesList": [
+                             {
+                               "serialNumber": "88888888888888",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-07T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "9121606916816166",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-08T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "8002133515362638",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-07T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "9037595978384946",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-02T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "468239240725862",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-16T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "6674152251808586",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-27T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "1534668488137872",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-08T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "3451558669666118",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-21T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "5997223080533484",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-27T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "115471400701485",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-12T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "8426899612375744",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-28T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "6437306597525036",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-17T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "9402008381412720",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-23T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "3399249453362386",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-13T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "2251062736472144",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-17T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "5275489621112789",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-06T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "4317753797787389",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-06T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "5667099163520831",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-27T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "842254987389825",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-13T09:49:45.5299381-07:00"
+                             }
+                           ]
+                         }
+                       }
+                       
+20170412 09:49:47      End of Response
+20170412 09:49:47      Response Received, Serializing to JSON
+20170412 09:49:47      Logging Reponse and sending back to caller: 
+20170412 09:49:47      {
+                         "requestId": "0",
+                         "dateTime": "2017-04-12T09:49:45.5250314-07:00",
+                         "status": "SUCCESS",
+                         "GuestList": [
+                           {
+                             "guestId": "ABC1234",
+                             "memberFirstName": "XOFYTSNEI",
+                             "memberLastName": "AGY"
+                           }
+                         ],
+                         "BalanceInquiry": {
+                           "status": "Okay",
+                           "Receipt": {
+                             "accountId": "6277201287461286",
+                             "status": "Active",
+                             "registered": "true",
+                             "ValueStoreBalances": [
+                               {
+                                 "currency": "USD",
+                                 "status": "Active",
+                                 "amount": "1000"
+                               }
+                             ]
+                           }
+                         },
+                         "Offers": {
+                           "Status": {
+                             "statusCode": "SUCCESS",
+                             "statusDescription": "Done"
+                           },
+                           "OffersList": [
+                             {
+                               "offerId": "930000069",
+                               "offerTitle": "$2.50 Breakfast Combo - sub",
+                               "expirationDate": "2017-04-18T09:49:45.5269945-07:00",
+                               "offerStatus": "ACTIVE",
+                               "offerType": "VALUE_BASED_OFFER",
+                               "offerCampaignUri": "bigstore:offermanager:offercampaign#6a951e10-d6a6-46c1-a215-a41d01fd67c8",
+                               "startDate": "2016-04-19T00:00:00",
+                               "propositionGuid": "subwaySD:6da7a880-837e-4cc8-94c2-f753713be86e",
+                               "offerDescription": "$2.50 Breakfast Combo - sub",
+                               "offerDetailedDescription": "$2.50 Breakfast Combo - sub",
+                               "LegalDisclaimerList": [
+                                 {
+                                   "legalDisclaimer": "No conpensation for any damages caused for use of this offer"
+                                 }
+                               ],
+                               "ImagesList": [
+                                 {
+                                   "offerImageContentType": "Mobile",
+                                   "offerImageURL": "www.subway.com/image2.png"
+                                 }
+                               ],
+                               "CTAList": [
+                                 {
+                                   "offerClickToActionTitle": "Click to receive 100 tokens",
+                                   "offerClickToActionUrl": "www.digital-subway.com/cta/click100"
+                                 }
+                               ]
+                             },
+                             {
+                               "offerId": "930000076",
+                               "offerTitle": "$1 Off Any Breakfast Sandwich",
+                               "expirationDate": "2017-04-14T09:49:45.5289568-07:00",
+                               "offerStatus": "ACTIVE",
+                               "offerType": "VALUE_BASED_OFFER",
+                               "offerCampaignUri": "bigstore:offermanager:offercampaign#0fc3f3d7-1491-42c4-ba0a-57d96973ae25",
+                               "startDate": "2016-05-11T00:00:00",
+                               "propositionGuid": "subwaySD:6da7a880-837e-4cc8-94c2-f753713be86f",
+                               "offerDescription": "$1 Off Any Breakfast Sandwich",
+                               "offerDetailedDescription": "$1 Off Any Breakfast Sandwich",
+                               "LegalDisclaimerList": [
+                                 {
+                                   "legalDisclaimer": "No conpensation for any damages caused for use of this offer"
+                                 }
+                               ],
+                               "ImagesList": [
+                                 {
+                                   "offerImageContentType": "Mobile",
+                                   "offerImageURL": "www.subway.com/image2.png"
+                                 }
+                               ],
+                               "CTAList": [
+                                 {
+                                   "offerClickToActionTitle": "Click to receive 100 tokens",
+                                   "offerClickToActionUrl": "www.digital-subway.com/cta/click100"
+                                 }
+                               ]
+                             }
+                           ]
+                         },
+                         "Loyalty": {
+                           "status": "Active",
+                           "statusInfo": "Active",
+                           "ResponseDetails": {
+                             "responseCode": "core0",
+                             "responseMessage": "Success"
+                           },
+                           "Summaries": [
+                             {
+                               "bucketId": 30,
+                               "rewardType": "Tokens",
+                               "available": 2000.0
+                             }
+                           ]
+                         },
+                         "Certificates": {
+                           "certificateCount": 19,
+                           "ResponseDetails": {
+                             "responseCode": "core0",
+                             "responseMessage": "Okay",
+                             "responseSuccess": true
+                           },
+                           "CertificatesList": [
+                             {
+                               "serialNumber": "88888888888888",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-07T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "9121606916816166",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-08T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "8002133515362638",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-07T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "9037595978384946",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-02T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "468239240725862",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-16T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "6674152251808586",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-27T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "1534668488137872",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-08T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "3451558669666118",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-21T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "5997223080533484",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-27T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "115471400701485",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-12T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "8426899612375744",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-28T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "6437306597525036",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-17T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "9402008381412720",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-23T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "3399249453362386",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-13T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "2251062736472144",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-17T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "5275489621112789",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-06T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "4317753797787389",
+                               "amount": 2.0,
+                               "expirationDate": "2017-05-06T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "5667099163520831",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-27T09:49:45.5299381-07:00"
+                             },
+                             {
+                               "serialNumber": "842254987389825",
+                               "amount": 2.0,
+                               "expirationDate": "2017-04-13T09:49:45.5299381-07:00"
+                             }
+                           ]
+                         }
+                       }
+20170412 09:51:50      SnaplogicWrap.Redeem Request Received
+20170412 09:51:50      Deserialized Object, Sending to Redeem
+20170412 09:51:50      Redeem Request Received:
+20170412 09:51:50      Sending Redeem Response:
+20170412 09:51:50      transactionId:            123
+                       status:                   SUCCESS
+                       xref:                     5157-31-36-7
+                       GuestList:                
+                         guestId:                ABC1234
+                         memberFirstName:        
+                         memberLastName:         
+                                                 
+                       Offers:                   
+                         Status:                 
+                           statusCode:           SUCCESS
+                           statusDescription:    The payment transaction was successful.
+                           errorCode:            
+                           errorDescription:     
+                         OffersList:             
+                           propositionGuid:      subwaySD:6da7a880-837e-4cc8-94c2-f753713be86e
+                           offerStatus:          REDEEMED
+                                                 
+                         FailedOffersList:       
+                       Loyalty:                  
+                         ResponseDetails:        
+                           responseCode:         core0
+                           responseMessage:      Success
+                           responseSuccess:      False
+                         Summaries:              
+                           bucketId:             30
+                           rewardType:           Tokens
+                           available:            2000
+                                                 
+                       
+20170412 09:51:50      Redeem Raw Response:
+20170412 09:51:50      {
+                         "transactionId": "123",
+                         "status": "SUCCESS",
+                         "xref": "5157-31-36-7",
+                         "GuestList": [
+                           {
+                             "guestId": "ABC1234"
+                           }
+                         ],
+                         "Offers": {
+                           "Status": {
+                             "statusCode": "SUCCESS",
+                             "statusDescription": "The payment transaction was successful."
+                           },
+                           "OffersList": [
+                             {
+                               "offerStatus": "REDEEMED",
+                               "propositionGuid": "subwaySD:6da7a880-837e-4cc8-94c2-f753713be86e"
+                             }
+                           ]
+                         },
+                         "Loyalty": {
+                           "ResponseDetails": {
+                             "responseCode": "core0",
+                             "responseMessage": "Success"
+                           },
+                           "Summaries": [
+                             {
+                               "bucketId": 30,
+                               "rewardType": "Tokens",
+                               "available": 2000.0
+                             }
+                           ]
+                         }
+                       }
+                       
+20170412 09:51:50      End of Response
+20170412 09:51:50      Response Received, Serializing to JSON
+20170412 09:51:50      Logging Reponse and sending back to caller: 
+20170412 09:51:50      {
+                         "transactionId": "123",
+                         "status": "SUCCESS",
+                         "xref": "5157-31-36-7",
+                         "GuestList": [
+                           {
+                             "guestId": "ABC1234"
+                           }
+                         ],
+                         "Offers": {
+                           "Status": {
+                             "statusCode": "SUCCESS",
+                             "statusDescription": "The payment transaction was successful."
+                           },
+                           "OffersList": [
+                             {
+                               "offerStatus": "REDEEMED",
+                               "propositionGuid": "subwaySD:6da7a880-837e-4cc8-94c2-f753713be86e"
+                             }
+                           ]
+                         },
+                         "Loyalty": {
+                           "ResponseDetails": {
+                             "responseCode": "core0",
+                             "responseMessage": "Success"
+                           },
+                           "Summaries": [
+                             {
+                               "bucketId": 30,
+                               "rewardType": "Tokens",
+                               "available": 2000.0
+                             }
+                           ]
+                         }
+                       }

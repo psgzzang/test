@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SPMDialer</name>
+    </assembly>
+    <members>
+        <member name="T:SPMDialer.FWH.CredentialsValidation">
+            <summary>
+            All possible credentials validation status.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.Invalid">
+            <summary>
+            Credentials are invalid.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.Valid">
+            <summary>
+            The Credentials are valid.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.ApplicationInvalid">
+            <summary>
+            The application is invalid.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.ApplicationDisabled">
+            <summary>
+            The application is disabled.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.ApplicationExpired">
+            <summary>
+            The application is expired.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.UserInvalid">
+            <summary>
+            The user is invalid.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.UserDisabled">
+            <summary>
+            The user is disabled.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.UserLocked">
+            <summary>
+            The user is locked.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.UserExpired">
+            <summary>
+            The user is expired.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.PasswordInvalid">
+            <summary>
+            The password is invalid.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.PasswordExpired">
+            <summary>
+            The password is expired.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.FWH.CredentialsValidation.AdditionalFactorsInvalid">
+            <summary>
+            Any other factor is invalid.
+            </summary>
+        </member>
+        <member name="T:SPMDialer.FWH.CredentialsValidator">
+            <summary>
+            Validates the user credentials.
+            </summary>
+        </member>
+        <member name="M:SPMDialer.FWH.CredentialsValidator.Validate(System.String,System.String)">
+            <summary>
+            Validates the given username and password.
+            </summary>
+            <param name="userName">The username to validate.</param>
+            <param name="password">The password to validate.</param>
+            <returns>The validation result.</returns>
+        </member>
+        <member name="M:SPMDialer.ModemData.LogMe">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:SPMDialer.ModemData.LogMe(System.String)">
+            <summary>
+            Logs this instance of the class
+            </summary>
+        </member>
+        <member name="T:SPMDialer.DialerException">
+            <summary>
+            A custom exception raised by the dialer.
+            </summary>
+        </member>
+        <member name="M:SPMDialer.DialerException.#ctor">
+            <summary>
+            An empty constructor, the default error message will be displayed.
+            </summary>
+        </member>
+        <member name="M:SPMDialer.DialerException.#ctor(System.String)">
+            <summary>
+            A constructor with an extra message to be displayed along with the default error message.
+            </summary>
+            <param name="auxMessage">A custom message to be displayed.</param>
+        </member>
+        <member name="M:SPMDialer.DialerException.#ctor(System.String,System.Exception)">
+            <summary>
+            A constructor to include an additional message along with an inner exception.
+            </summary>
+            <param name="auxMessage">A custom message to be displayed.</param>
+            <param name="innerException">An exception that was caught and recorded.</param>
+        </member>
+        <member name="T:SPMDialer.ResponseStatus">
+            <summary>
+            The type of response received during the transmission.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.ResponseStatus.Undefined">
+            <summary>
+            An unknown response. This status is the default. The expectation is that one of the 
+            other responses will be set during the transmission.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.ResponseStatus.Good">
+            <summary>
+            The phone was dialed and answered, the data was sent and a recognizable response was received.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.ResponseStatus.TimedOut">
+            <summary>
+            The preset time occurred before the response data was received.
+            </summary>
+        </member>
+        <member name="F:SPMDialer.ResponseStatus.DialerException">
+            <summary>
+            A dialer exception occurred during the transmission
+            </summary>
+        </member>
+        <member name="F:SPMDialer.ResponseStatus.Error">
+            <summary>
+            Some type of error occurred during the transmission.
+            </summary>
+        </member>
+        <member name="T:SPMDialer.CommunicationState">
+            <summary>
+            Tracks the state of the dialer during the processes of dialing and communicating with the host.
+            </summary>
+        </member>
+        <member name="T:SPMDialer.Dialer">
+            <summary>
+            The dialer class serves to manage the process of communicating with the host, from dialing, sending data, 
+            retrieving data and hanging up.
+            </summary>
+        </member>
+        <member name="M:SPMDialer.Dialer.#ctor">
+            <summary>
+            The constructor. Sets up logging and handlers for serial port events.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.ResponseStatus">
+            <summary>
+            Gets the response status.
+            </summary>
+            <remarks>
+            The possible values are:
+            <list type="bullet">
+            <item>Good: The dialer was able to dial, send data and received recognizable data. This does not
+            mean that the contents of the request was successful just that the transport and reception of the 
+            data was successful.</item>
+            <item>TimedOut: A timeout occurred, either during dialing, send data or receiving the data.
+            Check the <see cref="P:SPMDialer.Dialer.LastError"/> property for more information.</item>
+            <item>Error: An error occurred during the processing of the transaction. This could be during dialing,
+            compressing the data, sending the data, receiving the data or other. Check the <see cref="P:SPMDialer.Dialer.LastError"/> 
+            property for more information.</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:SPMDialer.Dialer.Port">
+            <summary>
+            Gets the serial port in use. The class returned is derived from the 
+            System.IO.SerialPort class.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.PhoneNumber">
+            <summary>
+            Gets/sets the phone number to dial.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.ModemInitString">
+            <summary>
+            Gets/sets the string to send to the modem prior to dialing.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.UseDialPrefix">
+            <summary>
+             Gets/sets whether to use the dial prefix value
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.DialPrefix">
+            <summary>
+            Gets/sets the string to be sent as a prefix to the phone number
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.HttpSendHeader">
+            <summary>
+            Gets the HTTP Header that will be sent.
+            </summary>
+        </member>
+        <member name="M:SPMDialer.Dialer.GetBytesToSend">
+            <summary>
+            Gets the data packet that should be sent in the transaction.
+            </summary>
+        </member>
+        <member name="M:SPMDialer.Dialer.SetBytesToSend(System.Byte[])">
+            <summary>
+             Sets the data packet that should be sent in the transaction.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:SPMDialer.Dialer.DataIsCompressed">
+            <summary>
+            Gets/sets if the data sent should be compressed first.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.ReturnDataIsCompressed">
+            <summary>
+            Gets whether or not the received data is compressed.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.ReceivedHeader">
+            <summary>
+            The HTTP header that was received from the host.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.ReceivedData">
+            <summary>
+            The data packet received expressed as a string. If the data received was compressed
+            it will be decompressed first then converted to string.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.ReceivedBytes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.Host">
+            <summary>
+            Gets/sets the host (URL) to be used. This may largely be ignored as it has nothing to do with the
+            actual dialing. It could be used by the receiver though to know which host the HTTP request should
+            be sent to. In practice the receive already knows which URL to use and is hard coded to it.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.UserAgent">
+            <summary>
+            Gets/sets the user agent, to be used in the HTTP header
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeoutDialing">
+            <summary>
+            Gets/sets the timeout for dialing, in seconds. The default value is 20 seconds.
+            </summary>
+            <remarks>
+            The dialer will wait this many seconds when dialing to 
+            receive the connect message. If a connect message is not received within this time frame
+            an error will be thrown. 
+            </remarks>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeoutWrite">
+            <summary>
+            Gets/sets the timeout for writing data to the serial port, in seconds. The default value is 10 seconds.
+            </summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeoutRead">
+            <summary>
+            Gets/sets the timeout for reading data from the serial port, in seconds. The default value is 20 seconds.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeoutTransmission">
+            <summary>
+            Gets/sets the timeout for the dialer operation, in seconds. The default value is 30 seconds.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeTotal">
+            <summary>
+            Gets the total time the transaction took. This is measured from when the SendData command is called
+            until the SendData returns.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeModemInit">
+            <summary>
+            Gets the time it took to send the init string to the modem and get a response, 
+            from the time that SendData was called.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeOffHook">
+            <summary>
+            Gets the time the phone is "off hook".
+            </summary>
+            <remarks>
+            This time is measured from when the CONNECT message is received until either
+            the ATH command is sent or the NO CARRIER message is received.
+            </remarks>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeDialing">
+            <summary>
+            Gets the time it takes to dial.
+            </summary>
+            <remarks>
+            This time is measured from when the ATDT command is sent until the CONNECT message is received.
+            </remarks>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeDataTransfer">
+            <summary>
+            Gets the time to send the data to the receiver.
+            </summary>
+            <remarks>
+            This is the time measured between the start of the write operation to the serial port
+            until the first byte of data returned.
+            </remarks>
+        </member>
+        <member name="P:SPMDialer.Dialer.TimeDataReceive">
+            <summary>
+            Gets the time it takes to receive the data.
+            </summary>
+            <remarks>
+            This is the time measured between the first byte of received data until all bytes have been received
+            or a NO CARRIER message is received.
+            </remarks>
+        </member>
+        <member name="P:SPMDialer.Dialer.LastError">
+            <summary>
+            Gets the last error (Exception) caught by the dialer.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Dialer.DLLVersion">
+            <summary>
+            The version number of the SPM Dialer Class Library
+            </summary>
+        </member>
+        <member name="M:SPMDialer.Dialer.SendData">
+            <summary>
+             The main method used to send data.  It is all encompassing in dialing, sending the data and 
+             receiving the response.
+            </summary>
+             <returns>
+             Returns a <see cref="P:SPMDialer.Dialer.ResponseStatus">ResponseStatus</see> object.
+             <list type="bullet">
+             <item>Good: The dialer was able to dial, send data and received recognizable data. This does not
+             mean that the contents of the request was successful just that the transport and reception of the 
+             data was successful.</item>
+             <item>TimedOut: A timeout occurred, either during dialing, send data or receiving the data.
+             Check the <see cref="P:SPMDialer.Dialer.LastError"/> property for more information.</item>
+             <item>Error: An error occurred during the processing of the transaction. This could be during dialing,
+             compressing the data, sending the data, receiving the data or other. Check the <see cref="P:SPMDialer.Dialer.LastError"/> 
+             property for more information.</item>
+             </list>
+             </returns>
+        </member>
+        <member name="M:SPMDialer.Dialer.SendData(System.Boolean)">
+            <summary>
+            The main method used to send data.  It is all encompassing in dialing, sending the data and 
+            receiving the response.
+            </summary>
+            <returns>
+            Returns a <see cref="P:SPMDialer.Dialer.ResponseStatus">ResponseStatus</see> object.
+            <list type="bullet">
+            <item>Good: The dialer was able to dial, send data and received recognizable data. This does not
+            mean that the contents of the request was successful just that the transport and reception of the 
+            data was successful.</item>
+            <item>TimedOut: A timeout occurred, either during dialing, send data or receiving the data.
+            Check the <see cref="P:SPMDialer.Dialer.LastError"/> property for more information.</item>
+            <item>Error: An error occurred during the processing of the transaction. This could be during dialing,
+            compressing the data, sending the data, receiving the data or other. Check the <see cref="P:SPMDialer.Dialer.LastError"/> 
+            property for more information.</item>
+            </list>
+            </returns>
+        </member>
+        <member name="M:SPMDialer.Dialer.Close">
+            <summary>
+            A method to hangup the phone and close the port.
+            </summary>
+            <remarks>
+            It is not normally required to call this method, but it can be used in case of issues
+            where the port remains open in an error situation.
+            </remarks>
+        </member>
+        <member name="M:SPMDialer.Dialer.LogMe">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:SPMDialer.Dialer.LogMe(System.String)">
+            <summary>
+            Logs this instance of the class
+            </summary>
+        </member>
+        <member name="M:SPMDialer.Dialer.LogTiming">
+            <summary>
+            Logs the Timing items for the dialer
+            </summary>
+        </member>
+        <member name="M:SPMDialer.Dialer.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="T:SPMDialer.Utilities.MyAssemblyInfo">
+            <summary>
+              This class provides information about the running application.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.ProductName">
+            <summary>
+              Gets the product name of the application.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.ProductTitle">
+            <summary>
+              Gets the product title of the application.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.ProductDescription">
+            <summary>
+              Gets the product title of the application.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.Location">
+            <summary>
+              Gets the full location, the folder and name, of the assembly.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.ParentFolder">
+            <summary>
+              Gets the folder in which the assembly exists.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.Version">
+            <summary>
+              Gets the version number of the application.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.Company">
+            <summary>
+              Gets the company of the application.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.Copyright">
+            <summary>
+              Gets the copyright information of the application.
+            </summary>
+        </member>
+        <member name="P:SPMDialer.Utilities.MyAssemblyInfo.CallingAssemblyName">
+            <summary>
+              Gets the product name of the application.
+            </summary>
+        </member>
+        <member name="T:SPMDialer.RS232Port">
+            <summary>
+            An overload of the System.IO.Ports.SerialPort for custom actions and initialization.
+            </summary>
+        </member>
+        <member name="M:SPMDialer.RS232Port.Close">
+            <summary>
+            Close the serial port.
+            </summary>
+            <remarks>
+            There is a "feature" for the serial port in that closing the port will sometimes hang, when a UI thread 
+            and the threadpool for the serial port collide. To avoid this UI components should not use Invoke, but
+            should instead use BeginInvoke when updating controls on non-UI threads.
+            Another method to resolve this issue is to close the port on a different thread. This method does
+            create a new thread and closes the port on the new thread.
+            </remarks>
+        </member>
+        <member name="M:SPMDialer.RS232Port.CloseSerialPort">
+            <summary>
+            Method to close the serial port, should be called on a new thread.
+            </summary>
+        </member>
+    </members>
+</doc>

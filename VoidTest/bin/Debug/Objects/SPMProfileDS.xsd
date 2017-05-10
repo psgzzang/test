@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SPMProfileDS" targetNamespace="http://spm.org/SPMProfileDS.xsd" xmlns:mstns="http://spm.org/SPMProfileDS.xsd" xmlns="http://spm.org/SPMProfileDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SPMProfileDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SPMProfileDS" msprop:Generator_UserDSName="SPMProfileDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Continent" msprop:Generator_TableClassName="ContinentDataTable" msprop:Generator_TableVarName="tableContinent" msprop:Generator_TablePropName="Continent" msprop:Generator_RowDeletingName="ContinentRowDeleting" msprop:Generator_RowChangingName="ContinentRowChanging" msprop:Generator_RowEvHandlerName="ContinentRowChangeEventHandler" msprop:Generator_RowDeletedName="ContinentRowDeleted" msprop:Generator_UserTableName="Continent" msprop:Generator_RowChangedName="ContinentRowChanged" msprop:Generator_RowEvArgName="ContinentRowChangeEvent" msprop:Generator_RowClassName="ContinentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContinentID" msdata:DataType="SPM.Utilities.ContinentConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnContinentID" msprop:Generator_ColumnPropNameInRow="ContinentID" msprop:Generator_ColumnPropNameInTable="ContinentIDColumn" msprop:Generator_UserColumnName="ContinentID" type="xs:anyType" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Country" msprop:Generator_TableClassName="CountryDataTable" msprop:Generator_TableVarName="tableCountry" msprop:Generator_TablePropName="Country" msprop:Generator_RowDeletingName="CountryRowDeleting" msprop:Generator_RowChangingName="CountryRowChanging" msprop:Generator_RowEvHandlerName="CountryRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryRowDeleted" msprop:Generator_UserTableName="Country" msprop:Generator_RowChangedName="CountryRowChanged" msprop:Generator_RowEvArgName="CountryRowChangeEvent" msprop:Generator_RowClassName="CountryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="ContinentID" msdata:DataType="SPM.Utilities.ContinentConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnContinentID" msprop:Generator_ColumnPropNameInRow="ContinentID" msprop:Generator_ColumnPropNameInTable="ContinentIDColumn" msprop:Generator_UserColumnName="ContinentID" type="xs:anyType" minOccurs="0" />
+              <xs:element name="ISOCode" msprop:Generator_ColumnVarNameInTable="columnISOCode" msprop:Generator_ColumnPropNameInRow="ISOCode" msprop:Generator_ColumnPropNameInTable="ISOCodeColumn" msprop:Generator_UserColumnName="ISOCode" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckSecureCard" msprop:Generator_ColumnVarNameInTable="columnCheckSecureCard" msprop:Generator_ColumnPropNameInRow="CheckSecureCard" msprop:Generator_ColumnPropNameInTable="CheckSecureCardColumn" msprop:Generator_UserColumnName="CheckSecureCard" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Language" msprop:Generator_TableClassName="LanguageDataTable" msprop:Generator_TableVarName="tableLanguage" msprop:Generator_TablePropName="Language" msprop:Generator_RowDeletingName="LanguageRowDeleting" msprop:Generator_RowChangingName="LanguageRowChanging" msprop:Generator_RowEvHandlerName="LanguageRowChangeEventHandler" msprop:Generator_RowDeletedName="LanguageRowDeleted" msprop:Generator_UserTableName="Language" msprop:Generator_RowChangedName="LanguageRowChanged" msprop:Generator_RowEvArgName="LanguageRowChangeEvent" msprop:Generator_RowClassName="LanguageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LanguageID" msdata:DataType="SPM.Utilities.LanguageConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnLanguageID" msprop:Generator_ColumnPropNameInRow="LanguageID" msprop:Generator_ColumnPropNameInTable="LanguageIDColumn" msprop:Generator_UserColumnName="LanguageID" type="xs:anyType" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CountryLanguage" msprop:Generator_TableClassName="CountryLanguageDataTable" msprop:Generator_TableVarName="tableCountryLanguage" msprop:Generator_TablePropName="CountryLanguage" msprop:Generator_RowDeletingName="CountryLanguageRowDeleting" msprop:Generator_RowChangingName="CountryLanguageRowChanging" msprop:Generator_RowEvHandlerName="CountryLanguageRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryLanguageRowDeleted" msprop:Generator_UserTableName="CountryLanguage" msprop:Generator_RowChangedName="CountryLanguageRowChanged" msprop:Generator_RowEvArgName="CountryLanguageRowChangeEvent" msprop:Generator_RowClassName="CountryLanguageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" />
+              <xs:element name="LanguageID" msdata:DataType="SPM.Utilities.LanguageConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnLanguageID" msprop:Generator_ColumnPropNameInRow="LanguageID" msprop:Generator_ColumnPropNameInTable="LanguageIDColumn" msprop:Generator_UserColumnName="LanguageID" type="xs:anyType" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CardProcessorUrl" msprop:Generator_TableClassName="CardProcessorUrlDataTable" msprop:Generator_TableVarName="tableCardProcessorUrl" msprop:Generator_TablePropName="CardProcessorUrl" msprop:Generator_RowDeletingName="CardProcessorUrlRowDeleting" msprop:Generator_RowChangingName="CardProcessorUrlRowChanging" msprop:Generator_RowEvHandlerName="CardProcessorUrlRowChangeEventHandler" msprop:Generator_RowDeletedName="CardProcessorUrlRowDeleted" msprop:Generator_UserTableName="CardProcessorUrl" msprop:Generator_RowChangedName="CardProcessorUrlRowChanged" msprop:Generator_RowEvArgName="CardProcessorUrlRowChangeEvent" msprop:Generator_RowClassName="CardProcessorUrlRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CardProcessorUrlID" msprop:Generator_ColumnVarNameInTable="columnCardProcessorUrlID" msprop:Generator_ColumnPropNameInRow="CardProcessorUrlID" msprop:Generator_ColumnPropNameInTable="CardProcessorUrlIDColumn" msprop:Generator_UserColumnName="CardProcessorUrlID" type="xs:short" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="IsProduction" msprop:Generator_ColumnVarNameInTable="columnIsProduction" msprop:Generator_ColumnPropNameInRow="IsProduction" msprop:Generator_ColumnPropNameInTable="IsProductionColumn" msprop:Generator_UserColumnName="IsProduction" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CardProcessorPhone" msprop:Generator_TableClassName="CardProcessorPhoneDataTable" msprop:Generator_TableVarName="tableCardProcessorPhone" msprop:Generator_TablePropName="CardProcessorPhone" msprop:Generator_RowDeletingName="CardProcessorPhoneRowDeleting" msprop:Generator_RowChangingName="CardProcessorPhoneRowChanging" msprop:Generator_RowEvHandlerName="CardProcessorPhoneRowChangeEventHandler" msprop:Generator_RowDeletedName="CardProcessorPhoneRowDeleted" msprop:Generator_UserTableName="CardProcessorPhone" msprop:Generator_RowChangedName="CardProcessorPhoneRowChanged" msprop:Generator_RowEvArgName="CardProcessorPhoneRowChangeEvent" msprop:Generator_RowClassName="CardProcessorPhoneRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CardProcessorPhoneID" msprop:Generator_ColumnVarNameInTable="columnCardProcessorPhoneID" msprop:Generator_ColumnPropNameInRow="CardProcessorPhoneID" msprop:Generator_ColumnPropNameInTable="CardProcessorPhoneIDColumn" msprop:Generator_UserColumnName="CardProcessorPhoneID" type="xs:short" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="IsProduction" msprop:Generator_ColumnVarNameInTable="columnIsProduction" msprop:Generator_ColumnPropNameInRow="IsProduction" msprop:Generator_ColumnPropNameInTable="IsProductionColumn" msprop:Generator_UserColumnName="IsProduction" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CardReaderDevice" msprop:Generator_TableClassName="CardReaderDeviceDataTable" msprop:Generator_TableVarName="tableCardReaderDevice" msprop:Generator_TablePropName="CardReaderDevice" msprop:Generator_RowDeletingName="CardReaderDeviceRowDeleting" msprop:Generator_RowChangingName="CardReaderDeviceRowChanging" msprop:Generator_RowEvHandlerName="CardReaderDeviceRowChangeEventHandler" msprop:Generator_RowDeletedName="CardReaderDeviceRowDeleted" msprop:Generator_UserTableName="CardReaderDevice" msprop:Generator_RowChangedName="CardReaderDeviceRowChanged" msprop:Generator_RowEvArgName="CardReaderDeviceRowChangeEvent" msprop:Generator_RowClassName="CardReaderDeviceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CardReaderDeviceID" msdata:DataType="SPM.Utilities.DeviceTypes, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnCardReaderDeviceID" msprop:Generator_ColumnPropNameInRow="CardReaderDeviceID" msprop:Generator_ColumnPropNameInTable="CardReaderDeviceIDColumn" msprop:Generator_UserColumnName="CardReaderDeviceID" type="xs:anyType" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="IsSecure" msprop:Generator_ColumnVarNameInTable="columnIsSecure" msprop:Generator_ColumnPropNameInRow="IsSecure" msprop:Generator_ColumnPropNameInTable="IsSecureColumn" msprop:Generator_UserColumnName="IsSecure" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TimeoutCardData" msprop:Generator_ColumnVarNameInTable="columnTimeoutCardData" msprop:Generator_ColumnPropNameInRow="TimeoutCardData" msprop:Generator_ColumnPropNameInTable="TimeoutCardDataColumn" msprop:Generator_UserColumnName="TimeoutCardData" type="xs:int" default="40" minOccurs="0" />
+              <xs:element name="SupportsManualEntry" msprop:Generator_ColumnVarNameInTable="columnSupportsManualEntry" msprop:Generator_ColumnPropNameInRow="SupportsManualEntry" msprop:Generator_ColumnPropNameInTable="SupportsManualEntryColumn" msprop:Generator_UserColumnName="SupportsManualEntry" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StoreBrand" msprop:Generator_TableClassName="StoreBrandDataTable" msprop:Generator_TableVarName="tableStoreBrand" msprop:Generator_TablePropName="StoreBrand" msprop:Generator_RowDeletingName="StoreBrandRowDeleting" msprop:Generator_RowChangingName="StoreBrandRowChanging" msprop:Generator_RowEvHandlerName="StoreBrandRowChangeEventHandler" msprop:Generator_RowDeletedName="StoreBrandRowDeleted" msprop:Generator_UserTableName="StoreBrand" msprop:Generator_RowChangedName="StoreBrandRowChanged" msprop:Generator_RowEvArgName="StoreBrandRowChangeEvent" msprop:Generator_RowClassName="StoreBrandRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StoreBrandID" msdata:DataType="SPM.Utilities.StoreBrandConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnStoreBrandID" msprop:Generator_ColumnPropNameInRow="StoreBrandID" msprop:Generator_ColumnPropNameInTable="StoreBrandIDColumn" msprop:Generator_UserColumnName="StoreBrandID" type="xs:anyType" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="ImageSlot" msprop:Generator_ColumnVarNameInTable="columnImageSlot" msprop:Generator_ColumnPropNameInRow="ImageSlot" msprop:Generator_ColumnPropNameInTable="ImageSlotColumn" msprop:Generator_UserColumnName="ImageSlot" type="xs:short" minOccurs="0" />
+              <xs:element name="ImageFilename" msprop:Generator_ColumnVarNameInTable="columnImageFilename" msprop:Generator_ColumnPropNameInRow="ImageFilename" msprop:Generator_ColumnPropNameInTable="ImageFilenameColumn" msprop:Generator_UserColumnName="ImageFilename" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StoreBrandContinent" msprop:Generator_TableClassName="StoreBrandContinentDataTable" msprop:Generator_TableVarName="tableStoreBrandContinent" msprop:Generator_TablePropName="StoreBrandContinent" msprop:Generator_RowDeletingName="StoreBrandContinentRowDeleting" msprop:Generator_RowChangingName="StoreBrandContinentRowChanging" msprop:Generator_RowEvHandlerName="StoreBrandContinentRowChangeEventHandler" msprop:Generator_RowDeletedName="StoreBrandContinentRowDeleted" msprop:Generator_UserTableName="StoreBrandContinent" msprop:Generator_RowChangedName="StoreBrandContinentRowChanged" msprop:Generator_RowEvArgName="StoreBrandContinentRowChangeEvent" msprop:Generator_RowClassName="StoreBrandContinentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StoreBrandID" msdata:DataType="SPM.Utilities.StoreBrandConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnStoreBrandID" msprop:Generator_ColumnPropNameInRow="StoreBrandID" msprop:Generator_ColumnPropNameInTable="StoreBrandIDColumn" msprop:Generator_UserColumnName="StoreBrandID" type="xs:anyType" />
+              <xs:element name="ContinentID" msdata:DataType="SPM.Utilities.ContinentConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnContinentID" msprop:Generator_ColumnPropNameInRow="ContinentID" msprop:Generator_ColumnPropNameInTable="ContinentIDColumn" msprop:Generator_UserColumnName="ContinentID" type="xs:anyType" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActiveProfile" msprop:Generator_TableClassName="ActiveProfileDataTable" msprop:Generator_TableVarName="tableActiveProfile" msprop:Generator_TablePropName="ActiveProfile" msprop:Generator_RowDeletingName="ActiveProfileRowDeleting" msprop:Generator_RowChangingName="ActiveProfileRowChanging" msprop:Generator_RowEvHandlerName="ActiveProfileRowChangeEventHandler" msprop:Generator_RowDeletedName="ActiveProfileRowDeleted" msprop:Generator_UserTableName="ActiveProfile" msprop:Generator_RowChangedName="ActiveProfileRowChanged" msprop:Generator_RowEvArgName="ActiveProfileRowChangeEvent" msprop:Generator_RowClassName="ActiveProfileRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActiveProfileID" msprop:Generator_ColumnVarNameInTable="columnActiveProfileID" msprop:Generator_ColumnPropNameInRow="ActiveProfileID" msprop:Generator_ColumnPropNameInTable="ActiveProfileIDColumn" msprop:Generator_UserColumnName="ActiveProfileID" type="xs:short" />
+              <xs:element name="StoreBrandID" msdata:DataType="SPM.Utilities.StoreBrandConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnStoreBrandID" msprop:Generator_ColumnPropNameInRow="StoreBrandID" msprop:Generator_ColumnPropNameInTable="StoreBrandIDColumn" msprop:Generator_UserColumnName="StoreBrandID" type="xs:anyType" minOccurs="0" />
+              <xs:element name="ContinentID" msdata:DataType="SPM.Utilities.ContinentConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnContinentID" msprop:Generator_ColumnPropNameInRow="ContinentID" msprop:Generator_ColumnPropNameInTable="ContinentIDColumn" msprop:Generator_UserColumnName="ContinentID" type="xs:anyType" minOccurs="0" />
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" minOccurs="0" />
+              <xs:element name="LanguageID" msdata:DataType="SPM.Utilities.LanguageConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnLanguageID" msprop:Generator_ColumnPropNameInRow="LanguageID" msprop:Generator_ColumnPropNameInTable="LanguageIDColumn" msprop:Generator_UserColumnName="LanguageID" type="xs:anyType" minOccurs="0" />
+              <xs:element name="CardProcessorUrlID" msprop:Generator_ColumnVarNameInTable="columnCardProcessorUrlID" msprop:Generator_ColumnPropNameInRow="CardProcessorUrlID" msprop:Generator_ColumnPropNameInTable="CardProcessorUrlIDColumn" msprop:Generator_UserColumnName="CardProcessorUrlID" type="xs:short" minOccurs="0" />
+              <xs:element name="CardProcessorPhoneID" msprop:Generator_ColumnVarNameInTable="columnCardProcessorPhoneID" msprop:Generator_ColumnPropNameInRow="CardProcessorPhoneID" msprop:Generator_ColumnPropNameInTable="CardProcessorPhoneIDColumn" msprop:Generator_UserColumnName="CardProcessorPhoneID" type="xs:short" minOccurs="0" />
+              <xs:element name="SecurityMeasure" msprop:Generator_ColumnVarNameInTable="columnSecurityMeasure" msprop:Generator_ColumnPropNameInRow="SecurityMeasure" msprop:Generator_ColumnPropNameInTable="SecurityMeasureColumn" msprop:Generator_UserColumnName="SecurityMeasure" type="xs:string" minOccurs="0" />
+              <xs:element name="IsProduction" msprop:Generator_ColumnVarNameInTable="columnIsProduction" msprop:Generator_ColumnPropNameInRow="IsProduction" msprop:Generator_ColumnPropNameInTable="IsProductionColumn" msprop:Generator_UserColumnName="IsProduction" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BrandLogoIsSaved" msprop:Generator_ColumnVarNameInTable="columnBrandLogoIsSaved" msprop:Generator_ColumnPropNameInRow="BrandLogoIsSaved" msprop:Generator_ColumnPropNameInTable="BrandLogoIsSavedColumn" msprop:Generator_UserColumnName="BrandLogoIsSaved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MaxSwipeDuration" msprop:Generator_ColumnVarNameInTable="columnMaxSwipeDuration" msprop:Generator_ColumnPropNameInRow="MaxSwipeDuration" msprop:Generator_ColumnPropNameInTable="MaxSwipeDurationColumn" msprop:Generator_UserColumnName="MaxSwipeDuration" type="xs:short" minOccurs="0" />
+              <xs:element name="LoyaltyProcessorUrlID" msprop:Generator_ColumnVarNameInTable="columnLoyaltyProcessorUrlID" msprop:Generator_ColumnPropNameInRow="LoyaltyProcessorUrlID" msprop:Generator_ColumnPropNameInTable="LoyaltyProcessorUrlIDColumn" msprop:Generator_UserColumnName="LoyaltyProcessorUrlID" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CardType" msprop:Generator_TableClassName="CardTypeDataTable" msprop:Generator_TableVarName="tableCardType" msprop:Generator_TablePropName="CardType" msprop:Generator_RowDeletingName="CardTypeRowDeleting" msprop:Generator_RowChangingName="CardTypeRowChanging" msprop:Generator_RowEvHandlerName="CardTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="CardTypeRowDeleted" msprop:Generator_UserTableName="CardType" msprop:Generator_RowChangedName="CardTypeRowChanged" msprop:Generator_RowEvArgName="CardTypeRowChangeEvent" msprop:Generator_RowClassName="CardTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CardTypeID" msdata:DataType="SPM.Utilities.CardTypeConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnCardTypeID" msprop:Generator_ColumnPropNameInRow="CardTypeID" msprop:Generator_ColumnPropNameInTable="CardTypeIDColumn" msprop:Generator_UserColumnName="CardTypeID" type="xs:anyType" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckSecureCard" msprop:Generator_ColumnVarNameInTable="columnCheckSecureCard" msprop:Generator_ColumnPropNameInRow="CheckSecureCard" msprop:Generator_ColumnPropNameInTable="CheckSecureCardColumn" msprop:Generator_UserColumnName="CheckSecureCard" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CountryCardTypeDevice" msprop:Generator_TableClassName="CountryCardTypeDeviceDataTable" msprop:Generator_TableVarName="tableCountryCardTypeDevice" msprop:Generator_TablePropName="CountryCardTypeDevice" msprop:Generator_RowDeletingName="CountryCardTypeDeviceRowDeleting" msprop:Generator_RowChangingName="CountryCardTypeDeviceRowChanging" msprop:Generator_RowEvHandlerName="CountryCardTypeDeviceRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryCardTypeDeviceRowDeleted" msprop:Generator_UserTableName="CountryCardTypeDevice" msprop:Generator_RowChangedName="CountryCardTypeDeviceRowChanged" msprop:Generator_RowEvArgName="CountryCardTypeDeviceRowChangeEvent" msprop:Generator_RowClassName="CountryCardTypeDeviceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" />
+              <xs:element name="CardTypeID" msdata:DataType="SPM.Utilities.CardTypeConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnCardTypeID" msprop:Generator_ColumnPropNameInRow="CardTypeID" msprop:Generator_ColumnPropNameInTable="CardTypeIDColumn" msprop:Generator_UserColumnName="CardTypeID" type="xs:anyType" />
+              <xs:element name="CardReaderDeviceID" msdata:DataType="SPM.Utilities.DeviceTypes, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnCardReaderDeviceID" msprop:Generator_ColumnPropNameInRow="CardReaderDeviceID" msprop:Generator_ColumnPropNameInTable="CardReaderDeviceIDColumn" msprop:Generator_UserColumnName="CardReaderDeviceID" type="xs:anyType" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActiveCardTypeDevice" msprop:Generator_TableClassName="ActiveCardTypeDeviceDataTable" msprop:Generator_TableVarName="tableActiveCardTypeDevice" msprop:Generator_TablePropName="ActiveCardTypeDevice" msprop:Generator_RowDeletingName="ActiveCardTypeDeviceRowDeleting" msprop:Generator_RowChangingName="ActiveCardTypeDeviceRowChanging" msprop:Generator_RowEvHandlerName="ActiveCardTypeDeviceRowChangeEventHandler" msprop:Generator_RowDeletedName="ActiveCardTypeDeviceRowDeleted" msprop:Generator_UserTableName="ActiveCardTypeDevice" msprop:Generator_RowChangedName="ActiveCardTypeDeviceRowChanged" msprop:Generator_RowEvArgName="ActiveCardTypeDeviceRowChangeEvent" msprop:Generator_RowClassName="ActiveCardTypeDeviceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActiveProfileID" msprop:Generator_ColumnVarNameInTable="columnActiveProfileID" msprop:Generator_ColumnPropNameInRow="ActiveProfileID" msprop:Generator_ColumnPropNameInTable="ActiveProfileIDColumn" msprop:Generator_UserColumnName="ActiveProfileID" type="xs:short" />
+              <xs:element name="CardTypeID" msdata:DataType="SPM.Utilities.CardTypeConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnCardTypeID" msprop:Generator_ColumnPropNameInRow="CardTypeID" msprop:Generator_ColumnPropNameInTable="CardTypeIDColumn" msprop:Generator_UserColumnName="CardTypeID" type="xs:anyType" />
+              <xs:element name="CardReaderDeviceID" msdata:DataType="SPM.Utilities.DeviceTypes, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnCardReaderDeviceID" msprop:Generator_ColumnPropNameInRow="CardReaderDeviceID" msprop:Generator_ColumnPropNameInTable="CardReaderDeviceIDColumn" msprop:Generator_UserColumnName="CardReaderDeviceID" type="xs:anyType" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CountryCardProcessorUrls" msprop:Generator_TableClassName="CountryCardProcessorUrlsDataTable" msprop:Generator_TableVarName="tableCountryCardProcessorUrls" msprop:Generator_TablePropName="CountryCardProcessorUrls" msprop:Generator_RowDeletingName="CountryCardProcessorUrlsRowDeleting" msprop:Generator_RowChangingName="CountryCardProcessorUrlsRowChanging" msprop:Generator_RowEvHandlerName="CountryCardProcessorUrlsRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryCardProcessorUrlsRowDeleted" msprop:Generator_UserTableName="CountryCardProcessorUrls" msprop:Generator_RowChangedName="CountryCardProcessorUrlsRowChanged" msprop:Generator_RowEvArgName="CountryCardProcessorUrlsRowChangeEvent" msprop:Generator_RowClassName="CountryCardProcessorUrlsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" minOccurs="0" />
+              <xs:element name="CardProcessorUrlID" msprop:Generator_ColumnVarNameInTable="columnCardProcessorUrlID" msprop:Generator_ColumnPropNameInRow="CardProcessorUrlID" msprop:Generator_ColumnPropNameInTable="CardProcessorUrlIDColumn" msprop:Generator_UserColumnName="CardProcessorUrlID" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CountryPhone" msprop:Generator_TableClassName="CountryPhoneDataTable" msprop:Generator_TableVarName="tableCountryPhone" msprop:Generator_TablePropName="CountryPhone" msprop:Generator_RowDeletingName="CountryPhoneRowDeleting" msprop:Generator_RowChangingName="CountryPhoneRowChanging" msprop:Generator_RowEvHandlerName="CountryPhoneRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryPhoneRowDeleted" msprop:Generator_UserTableName="CountryPhone" msprop:Generator_RowChangedName="CountryPhoneRowChanged" msprop:Generator_RowEvArgName="CountryPhoneRowChangeEvent" msprop:Generator_RowClassName="CountryPhoneRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" minOccurs="0" />
+              <xs:element name="CardProcessingPhoneID" msdata:Caption="CardProcessingUrlID" msprop:Generator_ColumnVarNameInTable="columnCardProcessingPhoneID" msprop:Generator_ColumnPropNameInRow="CardProcessingPhoneID" msprop:Generator_ColumnPropNameInTable="CardProcessingPhoneIDColumn" msprop:Generator_UserColumnName="CardProcessingPhoneID" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CountryCardType" msprop:Generator_TableClassName="CountryCardTypeDataTable" msprop:Generator_TableVarName="tableCountryCardType" msprop:Generator_TablePropName="CountryCardType" msprop:Generator_RowDeletingName="CountryCardTypeRowDeleting" msprop:Generator_RowChangingName="CountryCardTypeRowChanging" msprop:Generator_RowEvHandlerName="CountryCardTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryCardTypeRowDeleted" msprop:Generator_UserTableName="CountryCardType" msprop:Generator_RowChangedName="CountryCardTypeRowChanged" msprop:Generator_RowEvArgName="CountryCardTypeRowChangeEvent" msprop:Generator_RowClassName="CountryCardTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" />
+              <xs:element name="CardTypeID" msdata:DataType="SPM.Utilities.CardTypeConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnCardTypeID" msprop:Generator_ColumnPropNameInRow="CardTypeID" msprop:Generator_ColumnPropNameInTable="CardTypeIDColumn" msprop:Generator_UserColumnName="CardTypeID" type="xs:anyType" />
+              <xs:element name="CanEdit" msprop:Generator_ColumnVarNameInTable="columnCanEdit" msprop:Generator_ColumnPropNameInRow="CanEdit" msprop:Generator_ColumnPropNameInTable="CanEditColumn" msprop:Generator_UserColumnName="CanEdit" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AllowSmartPOS" msprop:Generator_TableClassName="AllowSmartPOSDataTable" msprop:Generator_TableVarName="tableAllowSmartPOS" msprop:Generator_TablePropName="AllowSmartPOS" msprop:Generator_RowDeletingName="AllowSmartPOSRowDeleting" msprop:Generator_RowChangingName="AllowSmartPOSRowChanging" msprop:Generator_RowEvHandlerName="AllowSmartPOSRowChangeEventHandler" msprop:Generator_RowDeletedName="AllowSmartPOSRowDeleted" msprop:Generator_UserTableName="AllowSmartPOS" msprop:Generator_RowChangedName="AllowSmartPOSRowChanged" msprop:Generator_RowEvArgName="AllowSmartPOSRowChangeEvent" msprop:Generator_RowClassName="AllowSmartPOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StoreBrandCountry" msprop:Generator_TableClassName="StoreBrandCountryDataTable" msprop:Generator_TableVarName="tableStoreBrandCountry" msprop:Generator_TablePropName="StoreBrandCountry" msprop:Generator_RowDeletingName="StoreBrandCountryRowDeleting" msprop:Generator_RowChangingName="StoreBrandCountryRowChanging" msprop:Generator_RowEvHandlerName="StoreBrandCountryRowChangeEventHandler" msprop:Generator_RowDeletedName="StoreBrandCountryRowDeleted" msprop:Generator_UserTableName="StoreBrandCountry" msprop:Generator_RowChangedName="StoreBrandCountryRowChanged" msprop:Generator_RowEvArgName="StoreBrandCountryRowChangeEvent" msprop:Generator_RowClassName="StoreBrandCountryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StoreBrandID" msdata:DataType="SPM.Utilities.StoreBrandConstants, SPMCommon, Version=9.2.1.54, Culture=neutral, PublicKeyToken=10daead7dde37c7b" msprop:Generator_ColumnVarNameInTable="columnStoreBrandID" msprop:Generator_ColumnPropNameInRow="StoreBrandID" msprop:Generator_ColumnPropNameInTable="StoreBrandIDColumn" msprop:Generator_UserColumnName="StoreBrandID" type="xs:anyType" />
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoyaltyProcessorUrl" msprop:Generator_TableClassName="LoyaltyProcessorUrlDataTable" msprop:Generator_TableVarName="tableLoyaltyProcessorUrl" msprop:Generator_RowChangedName="LoyaltyProcessorUrlRowChanged" msprop:Generator_TablePropName="LoyaltyProcessorUrl" msprop:Generator_RowDeletingName="LoyaltyProcessorUrlRowDeleting" msprop:Generator_RowChangingName="LoyaltyProcessorUrlRowChanging" msprop:Generator_RowEvHandlerName="LoyaltyProcessorUrlRowChangeEventHandler" msprop:Generator_RowDeletedName="LoyaltyProcessorUrlRowDeleted" msprop:Generator_RowClassName="LoyaltyProcessorUrlRow" msprop:Generator_UserTableName="LoyaltyProcessorUrl" msprop:Generator_RowEvArgName="LoyaltyProcessorUrlRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LoyaltyProcessorUrlID" msprop:Generator_ColumnVarNameInTable="columnLoyaltyProcessorUrlID" msprop:Generator_ColumnPropNameInRow="LoyaltyProcessorUrlID" msprop:Generator_ColumnPropNameInTable="LoyaltyProcessorUrlIDColumn" msprop:Generator_UserColumnName="LoyaltyProcessorUrlID" type="xs:short" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="URL" msprop:Generator_ColumnVarNameInTable="columnURL" msprop:Generator_ColumnPropNameInRow="URL" msprop:Generator_ColumnPropNameInTable="URLColumn" msprop:Generator_UserColumnName="URL" type="xs:string" />
+              <xs:element name="IsProduction" msprop:Generator_ColumnVarNameInTable="columnIsProduction" msprop:Generator_ColumnPropNameInRow="IsProduction" msprop:Generator_ColumnPropNameInTable="IsProductionColumn" msprop:Generator_UserColumnName="IsProduction" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CountryLoyaltyProcessorUrls" msprop:Generator_TableClassName="CountryLoyaltyProcessorUrlsDataTable" msprop:Generator_TableVarName="tableCountryLoyaltyProcessorUrls" msprop:Generator_TablePropName="CountryLoyaltyProcessorUrls" msprop:Generator_RowDeletingName="CountryLoyaltyProcessorUrlsRowDeleting" msprop:Generator_RowChangingName="CountryLoyaltyProcessorUrlsRowChanging" msprop:Generator_RowEvHandlerName="CountryLoyaltyProcessorUrlsRowChangeEventHandler" msprop:Generator_RowDeletedName="CountryLoyaltyProcessorUrlsRowDeleted" msprop:Generator_UserTableName="CountryLoyaltyProcessorUrls" msprop:Generator_RowChangedName="CountryLoyaltyProcessorUrlsRowChanged" msprop:Generator_RowEvArgName="CountryLoyaltyProcessorUrlsRowChangeEvent" msprop:Generator_RowClassName="CountryLoyaltyProcessorUrlsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" msprop:Generator_UserColumnName="CountryID" type="xs:short" />
+              <xs:element name="LoyaltyProcessorUrlID" msprop:Generator_ColumnVarNameInTable="columnLoyaltyProcessorUrlID" msprop:Generator_ColumnPropNameInRow="LoyaltyProcessorUrlID" msprop:Generator_ColumnPropNameInTable="LoyaltyProcessorUrlIDColumn" msprop:Generator_UserColumnName="LoyaltyProcessorUrlID" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_Continent" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Continent" />
+      <xs:field xpath="mstns:ContinentID" />
+    </xs:unique>
+    <xs:unique name="PK_Country" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Country" />
+      <xs:field xpath="mstns:CountryID" />
+    </xs:unique>
+    <xs:unique name="PK_Language" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Language" />
+      <xs:field xpath="mstns:LanguageID" />
+    </xs:unique>
+    <xs:unique name="PK_CountryLanguage" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CountryLanguage" />
+      <xs:field xpath="mstns:CountryID" />
+      <xs:field xpath="mstns:LanguageID" />
+    </xs:unique>
+    <xs:unique name="PK_CardProcessorURL" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CardProcessorUrl" />
+      <xs:field xpath="mstns:CardProcessorUrlID" />
+    </xs:unique>
+    <xs:unique name="PK_CardProcessorPhone" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CardProcessorPhone" />
+      <xs:field xpath="mstns:CardProcessorPhoneID" />
+    </xs:unique>
+    <xs:unique name="PK_CardReaderDevice" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CardReaderDevice" />
+      <xs:field xpath="mstns:CardReaderDeviceID" />
+    </xs:unique>
+    <xs:unique name="PK_StoreBrand" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StoreBrand" />
+      <xs:field xpath="mstns:StoreBrandID" />
+    </xs:unique>
+    <xs:unique name="PK_StoreBrandContinent" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StoreBrandContinent" />
+      <xs:field xpath="mstns:StoreBrandID" />
+      <xs:field xpath="mstns:ContinentID" />
+    </xs:unique>
+    <xs:unique name="PK_ActiveProfileID" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:ActiveProfileID" />
+    </xs:unique>
+    <xs:unique name="FK_StoreBrand">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:StoreBrandID" />
+    </xs:unique>
+    <xs:unique name="FK_Continent">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:ContinentID" />
+    </xs:unique>
+    <xs:unique name="FK_Country">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:CountryID" />
+    </xs:unique>
+    <xs:unique name="FK_Language">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:LanguageID" />
+    </xs:unique>
+    <xs:unique name="FK_CardProcessingUrl">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:CardProcessorUrlID" />
+    </xs:unique>
+    <xs:unique name="FK_CardProcessingPhone">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:CardProcessorPhoneID" />
+    </xs:unique>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:ActiveProfile" />
+      <xs:field xpath="mstns:LoyaltyProcessorUrlID" />
+    </xs:unique>
+    <xs:unique name="PK_CardType" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CardType" />
+      <xs:field xpath="mstns:CardTypeID" />
+    </xs:unique>
+    <xs:unique name="PK_CountryCardTypeDevice" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CountryCardTypeDevice" />
+      <xs:field xpath="mstns:CountryID" />
+      <xs:field xpath="mstns:CardTypeID" />
+      <xs:field xpath="mstns:CardReaderDeviceID" />
+    </xs:unique>
+    <xs:unique name="PK_ActiveCardTypeDevice" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActiveCardTypeDevice" />
+      <xs:field xpath="mstns:ActiveProfileID" />
+      <xs:field xpath="mstns:CardTypeID" />
+      <xs:field xpath="mstns:CardReaderDeviceID" />
+    </xs:unique>
+    <xs:unique name="CountryCardType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CountryCardType" />
+      <xs:field xpath="mstns:CountryID" />
+      <xs:field xpath="mstns:CardTypeID" />
+    </xs:unique>
+    <xs:unique name="StoreBrandCountry_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StoreBrandCountry" />
+      <xs:field xpath="mstns:CountryID" />
+      <xs:field xpath="mstns:StoreBrandID" />
+    </xs:unique>
+    <xs:unique name="LoyaltyProcessorUrl_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LoyaltyProcessorUrl" />
+      <xs:field xpath="mstns:LoyaltyProcessorUrlID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
